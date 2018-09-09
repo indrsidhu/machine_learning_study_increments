@@ -1,8 +1,7 @@
-'''
-Author: Inderjit Singh Sidhu
-Profile: https://github.com/indrsidhu
-Code hosted at: https://github.com/indrsidhu/machine_learning_study_increments
-'''
+- Author: Inderjit Singh Sidhu
+- Profile: https://github.com/indrsidhu
+- Code hosted at: https://github.com/indrsidhu/machine_learning_study_increments
+
 # Import libs
 ```py
 import numpy as np
@@ -87,7 +86,7 @@ def model(w,b,X,Y,num_iterations,learning_rate):
     return [w,b]
 ```
 
-# ====== START TRAINING WITH EXISTING ==============
+# === START TRAINING WITH EXISTING ==
 # Study HR departments data of employees increments
 ```py
 df = pd.read_csv('data.csv')
@@ -137,6 +136,6 @@ for i in range(predictInput.shape[1]):
 ```
 
 # OUTPUT WILL LOOK LIKE THIS
-RS 2000 increment to employees salary, make them 25 % Happy
-RS 10000 increment to employees salary, make them 81 % Happy
-RS 15000 increment to employees salary, make them 95 % Happy
+- RS 2000 increment to employees salary, make them 25 % Happy
+- RS 10000 increment to employees salary, make them 81 % Happy
+- RS 15000 increment to employees salary, make them 95 % Happy
