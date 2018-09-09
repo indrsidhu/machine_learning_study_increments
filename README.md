@@ -1,6 +1,7 @@
-This small machine learning program explains how you can train model to predict future outputs.
-Problem: A company’s is planning to give increment to their three employees, based on increments study (past experience) try to predict if given amount will make employees happy or not.
-By running py script we calculate w (weight) and b (bias) values which will helps to solve your problem.
+#This small machine learning program explains how you can train model to predict future outputs.
+- Problem: A company’s is planning to give increment to their three employees. 
+- Based on increments study (past experience) try to predict if given amount will make employees happy or not.
+- By running py script we calculate w (weight) and b (bias) values which will helps to solve your problem.
 
 ```py
 predictInput_orig = np.array([2000,10000,15000])
