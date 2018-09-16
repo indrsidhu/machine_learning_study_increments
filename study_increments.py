@@ -15,14 +15,14 @@ def initialize_with_zeros(dim):
 # propgate function take w,b as input and try to 
 #reduce cost (difference between actual output and predicted output)
 def propogate(w,b,X,Y):
-    m = X.shape[0]
+    m = X.shape[1]
     A = sigmoid(np.dot(w.T,X)+b)
     #cost = (- 1 / m) * np.sum(Y * np.log(A) + (1 - Y) * (np.log(1 - A)))   # compute cost
     cost = (1/m) * np.sum((np.subtract(A,Y))**2)
     
     cost = np.squeeze(cost)
     
-    difference = (A-Y)
+    difference = np.subtract(A,Y)
     dw = (1 / m) * np.dot(X, difference.T)
     db = (1 / m) * np.sum(difference)
     return [dw,db,cost]
@@ -89,8 +89,15 @@ X = X / np.amax(X)
 w, b = initialize_with_zeros(X.shape[0])
 
 num_iterations = 10000 # training data will be itrated number of times to find best optimized w and b values
-learning_rate = 0.0004 # while learning slope will be changed with this given rate
+learning_rate = 11.0 # while learning slope will be changed with this given rate
 w,b = model(w,b,X,Y,num_iterations,learning_rate) # run this model to start traning
+
+'''
+learning_rate = 11.0 with 10,000 iterations gives 99% Accuracy
+train accuracy: 99.21559341767667 %
+train cost: 0.00046865753066641346
+'''
+
 #====== /START TRAINING WITH EXISTING ==============
 
 
